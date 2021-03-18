@@ -1,28 +1,24 @@
 <template>
-  <div class="header">
-    <h1 class="name">Cody Rountree</h1>
-    <nav>
-      <router-link class="link" to="/">home</router-link>
-      <router-link class="link" to="/projects">projects</router-link>
-      <router-link class="link" to="/cv">cv</router-link>
-      <router-link class="link" to="/contact">contact</router-link>
-    </nav>
+  <div class="mt-2 mx-3">
+    <Navbar />
+    <div class="mx-3">
+      <router-view />
+    </div>
   </div>
-  <router-view />
 </template>
 
 <script>
+import Navbar from "@/components/Navbar.vue"
 export default {
   name: "App",
-  components: {},
+  components: {
+    Navbar
+  },
 };
 </script>
 
 <style>
-#app {
-  font-family: "Noto Sans CJK SC", "Open Sans", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+.router-link-exact-active {
+  color: rgb(21, 167, 142) !important;
 }
 </style>
