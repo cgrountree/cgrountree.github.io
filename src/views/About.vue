@@ -1,10 +1,7 @@
 <template>
   <div class="content-container">
     <p>
-      here is a wall of text about myself that will take up a significant amount
-      of space. i will have to think of many things to say, so it may be
-      difficult. we will see if i can come up with enough things to say or else
-      i will remove this page entirely or fill it with different information.
+      this is about
     </p>
   </div>
 </template>
