@@ -2,18 +2,13 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <h1 class="navbar-item has-text-primary">Cody Rountree</h1>
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+        <div class="navbar-burger" v-click-away="onClickAway" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <div class="navbar-menu">
+      <div class="navbar-menu" :class="{ 'is-active': showNav }">
         <div class="navbar-start">
           <router-link class="navbar-item" to="/">about</router-link>
           <router-link class="navbar-item" to="/projects">projects</router-link>
@@ -27,9 +22,19 @@
 </template>
 
 <script>
+import { mixin as clickaway } from 'vue3-click-away';
 export default {
   name: "navbar",
   components: {},
+  mixins: [ clickaway ],
+  data() {
+      return {showNav: false}
+  },
+  methods: {
+    onClickAway() {
+      this.showNav = false;
+    }
+  }
 };
 </script>
 
