@@ -8,7 +8,7 @@
           <span></span>
         </div>
       </div>
-      <div class="navbar-menu" :class="{ 'is-active': showNav }">
+      <div id="navbarMenu" class="navbar-menu" :class="{ 'is-active': showNav }">
         <div class="navbar-start">
           <router-link class="navbar-item" to="/">about</router-link>
           <router-link class="navbar-item" to="/projects">projects</router-link>
@@ -31,8 +31,10 @@ export default {
       return {showNav: false}
   },
   methods: {
-    onClickAway() {
-      this.showNav = false;
+    onClickAway(e) {
+        if (e.target != this.$refs.navbarMenu) {
+            this.showNav = false;
+        }
     }
   }
 };
