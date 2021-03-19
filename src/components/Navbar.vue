@@ -1,21 +1,21 @@
 <template>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <h1 class="navbar-item has-text-primary">Cody Rountree 1</h1>
+        <h1 class="navbar-item has-text-primary">Cody Rountree</h1>
         <div class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="container"></span>
+          <span class="container"></span>
+          <span class="container"></span>
         </div>
       </div>
       <div id="navbarMenu" class="navbar-menu" :class="{ 'is-active': showNav }">
         <div class="navbar-start">
-          <router-link class="navbar-item" to="/">about</router-link>
-          <router-link class="navbar-item" to="/projects">projects</router-link>
-          <router-link class="navbar-item" to="/cv">cv</router-link>
+          <router-link class="navbar-item has-text-centered" to="/">about</router-link>
+          <router-link class="navbar-item has-text-centered" to="/projects">projects</router-link>
+          <router-link class="navbar-item has-text-centered" to="/cv">cv</router-link>
         </div>
         <div class="navbar-end">
-          <router-link class="navbar-item" to="/contact">contact</router-link>
+          <router-link class="navbar-item has-text-centered" to="/contact">contact</router-link>
         </div>
       </div>
     </nav>
@@ -31,11 +31,6 @@ export default {
       return {showNav: false}
   },
   methods: {
-    onClickAway(e) {
-        if (e.target != this.$refs.navbarMenu) {
-            this.showNav = false;
-        }
-    }
   }
 };
 </script>
