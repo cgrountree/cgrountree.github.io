@@ -1,4 +1,4 @@
-import {createWebHistory, createRouter} from "vue-router";
+import {createWebHashHistory, createRouter} from "vue-router";
 import About from "@/views/About.vue";
 import Projects from "@/views/Projects.vue";
 import CurriculumVitae from "@/views/CurriculumVitae.vue";
@@ -8,7 +8,16 @@ const routes = [
     {
         path: "/",
         name: "about",
-        component: About
+        component: About,
+        beforeEnter: (to, from, next) => {
+            // eslint-disable-line no-unused-vars
+            const queryRoute = to.query.p;
+            if (queryRoute) {
+              router.push(queryRoute);
+            } else {
+              next();
+            }
+          }
     }, {
         path: "/projects",
         name: "projects",
@@ -26,6 +35,6 @@ const routes = [
     }
 ];
 
-const router = createRouter({history: createWebHistory(), routes});
+const router = createRouter({history: createWebHashHistory(), routes});
 
 export default router;

@@ -1,8 +1,8 @@
 <template>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <h1 class="navbar-item has-text-primary">Cody Rountree</h1>
-        <div class="navbar-burger" v-click-away="onClickAway" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
+        <h1 class="navbar-item has-text-primary">Cody Rountree 1</h1>
+        <div class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
           <span></span>
           <span></span>
           <span></span>
