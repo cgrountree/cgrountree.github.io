@@ -13,7 +13,9 @@
         <div class="columns">
           <div class="column">
             <p class="mt-4 title is-5">Software Engineer</p>
-            <p class="subtitle is-6">nCino, Inc. <br />Wilmington, North Carolina, USA</p>
+            <p class="subtitle is-6">
+              nCino, Inc. <br />Wilmington, North Carolina, USA
+            </p>
           </div>
         </div>
         <div class="subtitle is-6">
@@ -45,7 +47,10 @@
         <div class="columns">
           <div class="column">
             <p class="mt-6 title is-5">Software Engineer</p>
-            <p class="subtitle is-6">Toshiba Global Commerce Solutions <br />Durham, North Carolina, USA</p>
+            <p class="subtitle is-6">
+              Toshiba Global Commerce Solutions <br />Durham, North Carolina,
+              USA
+            </p>
           </div>
         </div>
         <div class="subtitle is-6">
@@ -105,7 +110,17 @@
       </div>
 
       <div class="section has-text-centered">
-        <p class="title is-4 has-text-primary">Education</p>
+        <p class="title is-2 has-text-primary">Education</p>
+
+        <p class="mt-6 title is-5">University of North Carolina Wilmington</p>
+        <p class="subtitle is-6">
+          B.S. Computer Science <br />Wilmington, North Carolina, USA
+        </p>
+
+        <p class="mt-6 title is-5">Mie University</p>
+        <p class="subtitle is-6">
+          Exchange Student <br />Tsu, Mie Prefecture, Japan
+        </p>
       </div>
     </div>
   </div>
