@@ -1,149 +1,112 @@
 <template>
   <div class="block" />
   <div class="columns">
-    <div class="box column container is-two-thirds">
-      <p class="title is-3">Cody Rountree</p>
-      <p class="subtitle is-4">Software Engineer</p>
+    <div class="box column container is-three-fourths">
+      <div class="section has-text-centered">
+        <p class="title is-1">Cody Rountree</p>
+        <p class="subtitle is-4">Software Engineer</p>
+      </div>
 
-      <div class="block" />
-      
-      <p class="title is-5">Experience</p>
+      <div class="section has-text-centered">
+        <p class="title is-2 has-text-primary">Experience</p>
 
-
-      <div class="block columns">
-        <div class="column">
-          <p class="mt-4">Software Engineer</p>
-          <p class="">nCino, Inc.</p>
-          <p class="">May 2020 - Present</p>
-        </div>
-        <div class="column content">
-          <div>
-            <ul>
-              <div>
-                <li>Salesforce</li>
-              </div>
-              <div>
-                <li>Apex</li>
-              </div>
-              <div>
-                <li>xQuery</li>
-              </div>
-              <div>
-                <li>SOQL</li>
-              </div>
-            </ul>
+        <div class="columns">
+          <div class="column">
+            <p class="mt-4 title is-5">Software Engineer</p>
+            <p class="subtitle is-6">nCino, Inc. <br />Wilmington, North Carolina, USA</p>
           </div>
         </div>
+        <div class="subtitle is-6">
+          <span>Salesforce |</span>
+          <span> Apex |</span>
+          <span> xQuery |</span>
+          <span> SOQL</span>
+        </div>
+        <div>
+          <ul>
+            <div>
+              <li>
+                Maintaining and adding features to integrations for the nCino
+                software
+              </li>
+            </div>
+            <div>
+              <li>
+                Develop methods to query and structure data required for API
+                calls
+              </li>
+            </div>
+            <div>
+              <li>Mapping data to required endpoints using xQuery and XSLT</li>
+            </div>
+          </ul>
+        </div>
 
-        <div class="column content is-half">
-          <div>
-            <ul>
-              <div>
-                <li>Maintaining and adding features to integrations for the nCino software</li>
-              </div>
-              <div>
-                <li>Develop methods to query and structure data required for API calls</li>
-              </div>
-              <div>
-                <li>Mapping data to required endpoints using xQuery and XSLT</li>
-              </div>
-            </ul>
+        <div class="columns">
+          <div class="column">
+            <p class="mt-6 title is-5">Software Engineer</p>
+            <p class="subtitle is-6">Toshiba Global Commerce Solutions <br />Durham, North Carolina, USA</p>
           </div>
+        </div>
+        <div class="subtitle is-6">
+          <span>Java (Spring framework) |</span>
+          <span> JavaScript (VueJs) |</span>
+          <span> OpenAPI |</span>
+          <span> MongoDB |</span>
+          <span> Docker</span>
+        </div>
+        <div>
+          <ul>
+            <div>
+              <li>
+                Implemented internationalization with i18n on a VueJS frontend
+              </li>
+            </div>
+            <div>
+              <li>
+                Built RESTful API endpoints to specification with openAPI and
+                Spring
+              </li>
+            </div>
+            <div>
+              <li>Built complex queries using MongoDB to retrieve data</li>
+            </div>
+          </ul>
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <p class="mt-6 title is-5">Software Engineer Intern</p>
+            <p class="subtitle is-6">
+              SunL <br />Matsusaka, Mie Prefecture, Japan
+            </p>
+          </div>
+        </div>
+        <div class="subtitle is-6">
+          <span>PHP (Laravel framework) |</span>
+          <span> HTML |</span>
+          <span> CSS |</span>
+          <span> MongoDB |</span>
+          <span> Docker</span>
+        </div>
+        <div>
+          <ul>
+            <div>
+              <li>Fixed bugs in PHP methods in the Laravel Framework</li>
+            </div>
+            <div>
+              <li>Implemented visual redesigns on webapp components</li>
+            </div>
+            <div>
+              <li>Built webpages for local government</li>
+            </div>
+          </ul>
         </div>
       </div>
 
-
-      <div class="block columns">
-        <div class="column">
-          <p class="mt-4">Software Engineer</p>
-          <p>Toshiba Global Commerce Solutions</p>
-          <p>October 2019 - April 2020</p>
-        </div>
-        
-        <div class="column content">
-          <div>
-            <ul>
-              <div>
-                <li>Java (Spring framework)</li>
-              </div>
-              <div>
-                <li>JavaScript (VueJs)</li>
-              </div>
-              <div>
-                <li>OpenAPI</li>
-              </div>
-              <div>
-                <li>MongoDB</li>
-              </div>
-              <div>
-                <li>Docker</li>
-              </div>
-            </ul>
-          </div>
-        </div>
-
-        <div class="column content is-half">
-          <div>
-            <ul>
-              <div>
-                <li>Implemented internationalization with i18n on a VueJS frontend</li>
-              </div>
-              <div>
-                <li>Built RESTful API endpoints to specification with openAPI and Spring framework</li>
-              </div>
-              <div>
-                <li>Built complex queries using MongoDB to retrieve datasets for use by the frontend</li>
-              </div>
-            </ul>
-          </div>
-        </div>
+      <div class="section has-text-centered">
+        <p class="title is-4 has-text-primary">Education</p>
       </div>
-
-
-      <div class="block columns">
-        <div class="column">
-          <p class="mt-4">Software Engineer Intern</p>
-          <p>SunL</p>
-          <p>Matsusaka, Mie Prefecture, Japan</p>
-          <p>May 2018 - August 2018</p>
-        </div>
-        
-        <div class="column content">
-          <div>
-            <ul>
-              <div>
-                <li>PHP (Laravel framework)</li>
-              </div>
-              <div>
-                <li>HTML</li>
-              </div>
-              <div>
-                <li>CSS</li>
-              </div>
-              <div>
-                <li>Docker</li>
-              </div>
-            </ul>
-          </div>
-        </div>
-
-        <div class="column content is-half">
-          <div>
-            <ul>
-              <div>
-                <li>Fixed bugs in PHP methods in the Laravel Framework</li>
-              </div>
-              <div>
-                <li>Implemented visual redesigns on webapp components</li>
-              </div>
-              <div>
-                <li>Built webpages for local government</li>
-              </div>
-            </ul>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </template>
